@@ -121,7 +121,42 @@ Pada tahap ini, dilakukan beberapa teknik Data Preparation agar data siap diguna
 
 ## Modeling
 
-Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+Pada tahap ini, dilakukan proses pemodelan menggunakan algoritma **Gradient Boosting** dan **Decision Tree** untuk menyelesaikan permasalahan. Setiap model diuji performanya, kemudian dibandingkan untuk memilih model terbaik.
+
+### 1. **Decision Tree**
+
+- **Proses**:  
+  Model Decision Tree dibangun menggunakan parameter berikut:
+
+  - `max_depth = 50` → Menentukan kedalaman maksimum pohon keputusan.
+  - `min_samples_split = 2` → Menentukan jumlah minimum sampel yang diperlukan untuk membagi node.
+
+- **Kelebihan**:
+
+  - Sederhana, mudah diinterpretasikan, dan cepat untuk dilatih.
+  - Dapat menangani fitur numerik dan kategori tanpa memerlukan preprocessing tambahan.
+
+- **Kekurangan**:
+  - Rentan terhadap **overfitting**, terutama jika pohon terlalu dalam.
+  - Kurang optimal dalam menangani data yang kompleks dibandingkan algoritma ensemble seperti Gradient Boosting.
+
+### 2. **Gradient Boosting**
+
+- **Proses**:  
+  Model Gradient Boosting dibangun dengan parameter sebagai berikut:
+
+  - `n_estimators = 200` → Jumlah pohon yang digunakan dalam ensemble.
+  - `learning_rate = 0.5` → Mengontrol kontribusi setiap pohon terhadap hasil akhir.
+  - `max_depth = 7` → Menentukan kedalaman maksimum pohon di setiap iterasi.
+
+- **Kelebihan**:
+
+  - Lebih akurat dibandingkan dengan Decision Tree karena menggunakan teknik ensemble untuk menggabungkan banyak pohon keputusan.
+  - Efektif dalam menangani data kompleks dan menangani overfitting dengan pengaturan hyperparameter yang tepat.
+
+- **Kekurangan**:
+  - Proses training lebih lambat dibandingkan dengan Decision Tree.
+  - Memerlukan tuning hyperparameter yang lebih kompleks untuk mendapatkan performa terbaik.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 
