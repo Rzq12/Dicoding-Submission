@@ -116,6 +116,7 @@ Pada tahap ini, dilakukan beberapa teknik Data Preparation agar data siap diguna
 ### Split Data
 
 - Proses: Data dibagi menjadi dua bagian: Training Set dan Test Set.
+
 - Alasan: Pemisahan data dilakukan untuk memastikan model dapat diuji dengan data yang belum pernah dilihat sebelumnya. Hal ini bertujuan untuk mengukur performa model dalam memprediksi data baru dan menghindari overfitting.
 
 ## Modeling
