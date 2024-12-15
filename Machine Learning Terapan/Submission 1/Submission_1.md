@@ -99,12 +99,24 @@ Dataset ini mencakup data untuk **estimasi tingkat obesitas** pada individu dari
 
 ## Data Preparation
 
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
+Pada tahap ini, dilakukan beberapa teknik Data Preparation agar data siap digunakan untuk membangun model machine learning. Adapun tahapan yang dilakukan meliputi:
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
+### Label Encoding
 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+- Proses: Label Encoding digunakan untuk mengubah data kategori menjadi bentuk numerik. Teknik ini diterapkan pada fitur yang memiliki nilai kategori non-numerik.
+
+- Alasan: Algoritma machine learning biasanya hanya dapat bekerja dengan data numerik. Oleh karena itu, nilai kategori perlu diubah menjadi angka agar dapat diproses oleh model.
+
+### Normalisasi Data
+
+- Proses: Normalisasi data dilakukan untuk menyelaraskan skala data pada setiap fitur. Teknik normalisasi seperti Min-Max Scaling diterapkan untuk memastikan semua fitur memiliki nilai dalam rentang tertentu, misalnya [0, 1].
+
+- Alasan: Normalisasi penting karena algoritma tertentu, seperti Gradient Boosting atau K-Nearest Neighbors (KNN), sensitif terhadap skala data. Jika data memiliki skala yang berbeda jauh, maka model dapat memberikan bobot yang tidak seimbang pada fitur tertentu.
+
+### Split Data
+
+- Proses: Data dibagi menjadi dua bagian: Training Set dan Test Set.
+- Alasan: Pemisahan data dilakukan untuk memastikan model dapat diuji dengan data yang belum pernah dilihat sebelumnya. Hal ini bertujuan untuk mengukur performa model dalam memprediksi data baru dan menghindari overfitting.
 
 ## Modeling
 
