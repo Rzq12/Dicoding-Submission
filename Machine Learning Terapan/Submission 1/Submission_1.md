@@ -169,13 +169,84 @@ Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, 
 
 Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
+Berikut adalah penulisan bagian **Evaluation** berdasarkan metrik evaluasi yang Anda gunakan (akuras,i precision, recall, F1-score, dan cross-validation score).
 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+---
 
-**---Ini adalah bagian akhir laporan---**
+## Evaluation
 
-_Catatan:_
+Pada bagian ini, dilakukan evaluasi terhadap performa model menggunakan metrik **akurasi**, **precision**, **recall**, **F1-score**, dan **cross-validation score**. Metrik ini digunakan karena sesuai dengan kasus klasifikasi yang dihadapi.
 
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
+### **Metrik Evaluasi yang Digunakan**
+
+1. **Akurasi**
+
+   - **Definisi**: Akurasi adalah proporsi prediksi yang benar terhadap total jumlah data.  
+     \[
+     \text{Akurasi} = \frac{\text{Jumlah Prediksi Benar}}{\text{Total Data}}
+     \]
+   - **Alasan**: Akurasi digunakan sebagai metrik dasar untuk melihat seberapa baik model memprediksi secara keseluruhan.
+
+2. **Precision**
+
+   - **Definisi**: Precision mengukur proporsi prediksi positif yang benar dibandingkan dengan total prediksi positif.  
+     \[
+     \text{Precision} = \frac{\text{True Positive (TP)}}{\text{True Positive (TP)} + \text{False Positive (FP)}}
+     \]
+   - **Alasan**: Precision penting untuk menghindari **false positives**, terutama jika prediksi positif memiliki konsekuensi serius.
+
+3. **Recall**
+
+   - **Definisi**: Recall mengukur kemampuan model untuk menemukan semua data positif dari keseluruhan data positif yang ada.  
+     \[
+     \text{Recall} = \frac{\text{True Positive (TP)}}{\text{True Positive (TP)} + \text{False Negative (FN)}}
+     \]
+   - **Alasan**: Recall penting jika konsekuensi dari **false negatives** cukup tinggi, seperti dalam deteksi penyakit atau fraud.
+
+4. **F1-Score**
+
+   - **Definisi**: F1-Score adalah rata-rata harmonis dari precision dan recall.  
+     \[
+     \text{F1-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+     \]
+   - **Alasan**: F1-Score memberikan gambaran seimbang antara precision dan recall, terutama jika terdapat ketidakseimbangan data.
+
+5. **Cross-Validation (CV) Score**
+   - **Definisi**: Cross-validation score digunakan untuk mengevaluasi stabilitas dan generalisasi model dengan membagi data ke dalam beberapa fold (misalnya 5-fold atau 10-fold).
+   - **Alasan**: CV score memastikan performa model tidak hanya baik pada satu pembagian data tetapi konsisten pada beberapa iterasi.
+
+---
+
+### **Hasil Evaluasi Proyek**
+
+Berdasarkan metrik evaluasi yang digunakan, berikut adalah performa dari kedua model (**Decision Tree** dan **Gradient Boosting**):
+
+| Model                 | CV Mean Accuracy | Test Accuracy | Train Accuracy | Precision | Recall | F1-Score |
+| --------------------- | ---------------- | ------------- | -------------- | --------- | ------ | -------- |
+| **Decision Tree**     | 0.9218           | 0.9362        | 1.0            | 0.9367    | 0.9362 | 0.9361   |
+| **Gradient Boosting** | 0.9680           | 0.9645        | 1.0            | 0.9647    | 0.9645 | 0.9645   |
+
+#### **Analisis Hasil**
+
+1. **Decision Tree**
+
+   - Model Decision Tree memiliki **CV Mean Accuracy** sebesar **92.18%** dan **Test Accuracy** sebesar **93.62%**.
+   - Precision, Recall, dan F1-Score untuk Decision Tree adalah **0.936**.
+   - Model menunjukkan **overfitting** karena **Train Accuracy** mencapai **100%**, namun Test Accuracy lebih rendah.
+
+2. **Gradient Boosting**
+   - Model Gradient Boosting memiliki **CV Mean Accuracy** sebesar **96.80%** dan **Test Accuracy** sebesar **96.45%**.
+   - Precision, Recall, dan F1-Score untuk Gradient Boosting adalah **0.964**.
+   - Model ini juga mengalami overfitting, tetapi tingkat akurasi dan metrik evaluasi lainnya lebih tinggi dibandingkan Decision Tree.
+
+#### **Pemilihan Model Terbaik**
+
+Berdasarkan hasil evaluasi, model **Gradient Boosting** dipilih sebagai model terbaik karena:
+
+- Memiliki **Test Accuracy** yang lebih tinggi (**96.45%**) dibandingkan Decision Tree (**93.62%**).
+- Menunjukkan performa yang lebih baik pada metrik precision, recall, dan F1-Score.
+- **CV Mean Accuracy** yang lebih tinggi menunjukkan model memiliki kemampuan generalisasi yang lebih baik dibandingkan Decision Tree.
+
+---
+
+Dengan demikian, Gradient Boosting menjadi solusi terbaik untuk kasus ini karena performa yang lebih unggul pada semua metrik evaluasi yang digunakan.
