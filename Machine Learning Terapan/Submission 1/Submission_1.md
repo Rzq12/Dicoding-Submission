@@ -160,19 +160,6 @@ Pada tahap ini, dilakukan proses pemodelan menggunakan algoritma **Gradient Boos
 
 ## Evaluation
 
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
-
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
-
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
-
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
-
----
-
-## Evaluation
-
 Pada bagian ini, dilakukan evaluasi terhadap performa model menggunakan metrik **akurasi**, **precision**, **recall**, **F1-score**, dan **cross-validation score**. Metrik ini digunakan karena sesuai dengan kasus klasifikasi yang dihadapi.
 
 ### **Metrik Evaluasi yang Digunakan**
