@@ -21,9 +21,7 @@ machine learning untuk mengkategorikan jenis-jenis obesitas berdasarkan berbagai
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
-
-Bagian laporan ini mencakup:
+Pada bagian ini, kami akan menjelaskan proses klarifikasi masalah terkait obesitas, serta tujuan yang ingin dicapai dalam penelitian ini. Selain itu, akan disajikan juga solusi yang diusulkan untuk meraih tujuan tersebut dengan menggunakan teknologi machine learning untuk mendeteksi resiko obesitas.
 
 ### Problem Statements
 
