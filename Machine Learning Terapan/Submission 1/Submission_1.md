@@ -198,17 +198,13 @@ Pada bagian ini, dilakukan evaluasi terhadap performa model menggunakan metrik *
 3. **Recall**
 
    - **Definisi**: Recall mengukur kemampuan model untuk menemukan semua data positif dari keseluruhan data positif yang ada.  
-     \[
      \text{Recall} = \frac{\text{True Positive (TP)}}{\text{True Positive (TP)} + \text{False Negative (FN)}}
-     \]
    - **Alasan**: Recall penting jika konsekuensi dari **false negatives** cukup tinggi, seperti dalam deteksi penyakit atau fraud.
 
 4. **F1-Score**
 
    - **Definisi**: F1-Score adalah rata-rata harmonis dari precision dan recall.  
-     \[
      \text{F1-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
-     \]
    - **Alasan**: F1-Score memberikan gambaran seimbang antara precision dan recall, terutama jika terdapat ketidakseimbangan data.
 
 5. **Cross-Validation (CV) Score**
