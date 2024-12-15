@@ -169,8 +169,6 @@ Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, 
 
 Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
 
-Berikut adalah penulisan bagian **Evaluation** berdasarkan metrik evaluasi yang Anda gunakan (akuras,i precision, recall, F1-score, dan cross-validation score).
-
 ---
 
 ## Evaluation
@@ -181,37 +179,27 @@ Pada bagian ini, dilakukan evaluasi terhadap performa model menggunakan metrik *
 
 1. **Akurasi**
 
-   - **Definisi**: Akurasi adalah proporsi prediksi yang benar terhadap total jumlah data.  
-     \[
-     \text{Akurasi} = \frac{\text{Jumlah Prediksi Benar}}{\text{Total Data}}
-     \]
+   - **Definisi**: Akurasi adalah proporsi prediksi yang benar terhadap total jumlah data.
    - **Alasan**: Akurasi digunakan sebagai metrik dasar untuk melihat seberapa baik model memprediksi secara keseluruhan.
 
 2. **Precision**
 
-   - **Definisi**: Precision mengukur proporsi prediksi positif yang benar dibandingkan dengan total prediksi positif.  
-     \[
-     \text{Precision} = \frac{\text{True Positive (TP)}}{\text{True Positive (TP)} + \text{False Positive (FP)}}
-     \]
+   - **Definisi**: Precision mengukur proporsi prediksi positif yang benar dibandingkan dengan total prediksi positif.
    - **Alasan**: Precision penting untuk menghindari **false positives**, terutama jika prediksi positif memiliki konsekuensi serius.
 
 3. **Recall**
 
-   - **Definisi**: Recall mengukur kemampuan model untuk menemukan semua data positif dari keseluruhan data positif yang ada.  
-     \text{Recall} = \frac{\text{True Positive (TP)}}{\text{True Positive (TP)} + \text{False Negative (FN)}}
+   - **Definisi**: Recall mengukur kemampuan model untuk menemukan semua data positif dari keseluruhan data positif yang ada.
    - **Alasan**: Recall penting jika konsekuensi dari **false negatives** cukup tinggi, seperti dalam deteksi penyakit atau fraud.
 
 4. **F1-Score**
 
-   - **Definisi**: F1-Score adalah rata-rata harmonis dari precision dan recall.  
-     \text{F1-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+   - **Definisi**: F1-Score adalah rata-rata harmonis dari precision dan recall.
    - **Alasan**: F1-Score memberikan gambaran seimbang antara precision dan recall, terutama jika terdapat ketidakseimbangan data.
 
 5. **Cross-Validation (CV) Score**
    - **Definisi**: Cross-validation score digunakan untuk mengevaluasi stabilitas dan generalisasi model dengan membagi data ke dalam beberapa fold (misalnya 5-fold atau 10-fold).
    - **Alasan**: CV score memastikan performa model tidak hanya baik pada satu pembagian data tetapi konsisten pada beberapa iterasi.
-
----
 
 ### **Hasil Evaluasi Proyek**
 
@@ -242,7 +230,5 @@ Berdasarkan hasil evaluasi, model **Gradient Boosting** dipilih sebagai model te
 - Memiliki **Test Accuracy** yang lebih tinggi (**96.45%**) dibandingkan Decision Tree (**93.62%**).
 - Menunjukkan performa yang lebih baik pada metrik precision, recall, dan F1-Score.
 - **CV Mean Accuracy** yang lebih tinggi menunjukkan model memiliki kemampuan generalisasi yang lebih baik dibandingkan Decision Tree.
-
----
 
 Dengan demikian, Gradient Boosting menjadi solusi terbaik untuk kasus ini karena performa yang lebih unggul pada semua metrik evaluasi yang digunakan.
