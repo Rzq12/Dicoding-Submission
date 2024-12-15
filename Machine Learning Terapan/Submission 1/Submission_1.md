@@ -91,10 +91,6 @@ Dataset ini mencakup data untuk **estimasi tingkat obesitas** pada individu dari
 - **MTRANS**: Jenis transportasi yang biasanya digunakan oleh individu.
 - **NObeyesdad**: Tingkat obesitas individu.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
-
 ## Data Preparation
 
 Pada tahap ini, dilakukan beberapa teknik Data Preparation agar data siap digunakan untuk membangun model machine learning. Adapun tahapan yang dilakukan meliputi:
