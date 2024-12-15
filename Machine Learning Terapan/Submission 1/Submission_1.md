@@ -205,10 +205,10 @@ Pada bagian ini, dilakukan evaluasi terhadap performa model menggunakan metrik *
 
 Berdasarkan metrik evaluasi yang digunakan, berikut adalah performa dari kedua model (**Decision Tree** dan **Gradient Boosting**):
 
-| Model                 | CV Mean Accuracy | Test Accuracy | Train Accuracy | Precision | Recall | F1-Score |
-| --------------------- | ---------------- | ------------- | -------------- | --------- | ------ | -------- |
-| **Decision Tree**     | 0.9218           | 0.9362        | 1.0            | 0.9367    | 0.9362 | 0.9361   |
-| **Gradient Boosting** | 0.9680           | 0.9645        | 1.0            | 0.9647    | 0.9645 | 0.9645   |
+| Model                 | CV Mean Accuracy | Test Accuracy | Precision | Recall | F1-Score |
+| --------------------- | ---------------- | ------------- | --------- | ------ | -------- |
+| **Decision Tree**     | 0.9218           | 0.9362        | 0.9367    | 0.9362 | 0.9361   |
+| **Gradient Boosting** | 0.9680           | 0.9645        | 0.9647    | 0.9645 | 0.9645   |
 
 #### **Analisis Hasil**
 
