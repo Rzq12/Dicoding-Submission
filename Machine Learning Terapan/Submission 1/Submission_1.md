@@ -10,6 +10,7 @@ ini menyebabkan obesitas dikategorikan oleh World Health Organization (WHO) seba
 kematian tertinggi ke-5 di dunia. Pada tahun 2018, pravelensi penderita obesitas di Indonesia mencapai angka 28,7%
 dan kian meningkat setiap tahunnya dengan persentase kasus kematian tertingginya terjadi pada tahun 2020, yakni
 sebesar 80,46% [2].
+
 Adanya peningkatan secara masif, mengindikasikan bahwa obesitas merupakan sinyal utama bagi
 resiko komplikasi penyakit kronis, seperti penyakit kardiovaskular. Oleh sebab itu, dibutuhkan langkah-langkah
 preventif dini guna mengurangi tingkat resiko kematian dengan memanfaatkan perkembangan teknologi yang ada.
