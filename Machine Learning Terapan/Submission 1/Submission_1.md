@@ -70,6 +70,7 @@ Dataset ini mencakup data untuk **estimasi tingkat obesitas** pada individu dari
 
 - **77%** data dihasilkan secara **sintetis** menggunakan alat **Weka** dengan filter **SMOTE**.
 - **23%** data dikumpulkan secara langsung dari pengguna melalui **platform web**.
+- Dataset mengandung **outlier**, namun keberadaannya tidak terlalu berpengaruh karena sebagian besar data dihasilkan menggunakan **SMOTE**, yang bertujuan untuk mengatasi ketidakseimbangan kelas.
 
 [Estimation of Obesity Levels Based On Eating Habits and Physical Condition](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition).
 
