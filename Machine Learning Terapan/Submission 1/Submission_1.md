@@ -9,7 +9,8 @@ obesitas di dunia mencapai angka 890 juta kasus dengan kelompok usia remaja seba
 ini menyebabkan obesitas dikategorikan oleh World Health Organization (WHO) sebagai faktor resiko penyebab
 kematian tertinggi ke-5 di dunia. Pada tahun 2018, pravelensi penderita obesitas di Indonesia mencapai angka 28,7%
 dan kian meningkat setiap tahunnya dengan persentase kasus kematian tertingginya terjadi pada tahun 2020, yakni
-sebesar 80,46% [2]. Adanya peningkatan secara masif, mengindikasikan bahwa obesitas merupakan sinyal utama bagi
+sebesar 80,46% [2].
+Adanya peningkatan secara masif, mengindikasikan bahwa obesitas merupakan sinyal utama bagi
 resiko komplikasi penyakit kronis, seperti penyakit kardiovaskular. Oleh sebab itu, dibutuhkan langkah-langkah
 preventif dini guna mengurangi tingkat resiko kematian dengan memanfaatkan perkembangan teknologi yang ada.
 Salah satunya, melalui machine learning sebagai deteksi resiko obesitas. Penelitian ini memanfaatkan algoritma pada
@@ -103,7 +104,7 @@ Pada tahap ini, dilakukan beberapa teknik Data Preparation agar data siap diguna
 
 ### Normalisasi Data
 
-- Proses: Normalisasi data dilakukan untuk menyelaraskan skala data pada setiap fitur. Teknik normalisasi seperti StandardScaler diterapkan untuk memastikan semua fitur memiliki nilai dalam rentang tertentu, misalnya [0, 1].
+- Proses: Normalisasi data dilakukan untuk menyelaraskan skala data pada setiap fitur. Teknik normalisasi seperti StandardScaler diterapkan untuk memastikan semua fitur memiliki nilai dalam rentang tertentu.
 
 - Alasan: Normalisasi penting karena algoritma tertentu, seperti Gradient Boosting atau K-Nearest Neighbors (KNN), sensitif terhadap skala data. Jika data memiliki skala yang berbeda jauh, maka model dapat memberikan bobot yang tidak seimbang pada fitur tertentu.
 
