@@ -56,7 +56,7 @@ Untuk mengevaluasi kinerja model dalam mendeteksi resiko obesitas, beberapa metr
 
 ## Data Understanding
 
-Dataset ini mencakup data untuk **estimasi tingkat obesitas** pada individu dari negara **Meksiko, Peru, dan Kolombia**, berdasarkan **kebiasaan makan** dan **kondisi fisik** mereka. Data ini terdiri dari **17 atribut** dan **2111 rekaman**, di mana setiap rekaman diberi label dengan variabel kelas **NObesity** (Tingkat Obesitas).Dataset mengandung **outlier**, namun keberadaannya tidak terlalu berpengaruh karena sebagian besar data dihasilkan menggunakan **SMOTE**, yang bertujuan untuk mengatasi ketidakseimbangan kelas. Variabel ini memungkinkan klasifikasi data ke dalam kategori berikut:
+Dataset ini mencakup data untuk **estimasi tingkat obesitas** pada individu dari negara **Meksiko, Peru, dan Kolombia**, berdasarkan **kebiasaan makan** dan **kondisi fisik** mereka. Data ini terdiri dari **17 atribut** dan **2111 rekaman**, di mana setiap rekaman diberi label dengan variabel kelas **NObesity** (Tingkat Obesitas). Tidak ada missing value, duplicate pada dataset. Variabel ini memungkinkan klasifikasi data ke dalam kategori berikut:
 
 - **Berat Badan Kurang** (Insufficient Weight)
 - **Berat Badan Normal** (Normal Weight)
