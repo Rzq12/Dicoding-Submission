@@ -33,6 +33,7 @@ Dataset yang digunakan dalam proyek ini merupakan data film dari **Netflix**. Da
 ### Sumber Data
 
 - Dataset: [Netflix Movies & Shows Dataset](https://www.kaggle.com/datasets/ashfakyeafi/netflix-movies-and-shows-dataset)
+- Pada dataset terdapat 8807 data film.
 - Terdapat beberapa missing value yang telah ditangani dengan teknik data preprocessing.
 
 **Variabel dalam dataset:**
@@ -60,9 +61,8 @@ Langkah-langkah persiapan data meliputi:
    - Menghapus tanda baca.
    - Mengonversi teks menjadi huruf kecil.
    - Menghapus spasi yang tidak perlu.
-4. **Ekstraksi fitur teks menggunakan TF-IDF Vectorization**.
+4. **Ekstraksi fitur teks menggunakan TF-IDF Vectorization** Mengubah teks menjadi representasi numerik menggunakan `TfidfVectorizer()`.
 5. **Membangun matriks kesamaan menggunakan Cosine Similarity** untuk mengukur hubungan antar film.
-6. **TF-IDF Vectorization**: Mengubah teks menjadi representasi numerik menggunakan `TfidfVectorizer()`.
 
 ## Model and Results
 
