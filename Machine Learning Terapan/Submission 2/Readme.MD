@@ -33,7 +33,7 @@ Dataset yang digunakan dalam proyek ini merupakan data film dari **Netflix**. Da
 ### Sumber Data
 
 - Dataset: [Netflix Movies & Shows Dataset](https://www.kaggle.com/datasets/ashfakyeafi/netflix-movies-and-shows-dataset)
-- Pada dataset terdapat 8807 data film.
+- Pada dataset terdapat 8807 data film, dan 12 variabel.
 - Terdapat beberapa missing value yang telah ditangani dengan teknik data preprocessing.
 
 **Variabel dalam dataset:**
