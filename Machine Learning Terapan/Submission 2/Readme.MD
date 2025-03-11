@@ -100,6 +100,7 @@ Dalam implementasi Python, precision dan recall dapat dihitung dengan membanding
 ### Hasil Evaluasi
 
 Precision: 0.60 → Dari semua rekomendasi yang diberikan, 60% di antaranya relevan bagi pengguna. Ini menunjukkan bahwa ada beberapa rekomendasi yang kurang sesuai.
+
 Recall: 0.67 → Dari semua film yang relevan, sistem berhasil merekomendasikan 67% di antaranya. Ini berarti sistem telah menemukan sebagian besar film yang sesuai, tetapi masih ada beberapa film relevan yang tidak direkomendasikan.
 
 ## Kesimpulan dan Saran
